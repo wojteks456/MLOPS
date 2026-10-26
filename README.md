@@ -66,7 +66,8 @@ sudo systemctl status llamafile --no-pager
 ```
 Wynik (zużycie pamięci widoczne w wierszu `Memory`):
 ```text
-[WKLEJ TUTAJ WYNIK Z SYSTEMCTL STATUS]
+<img width="374" height="220" alt="image" src="https://github.com/user-attachments/assets/de54764d-81f0-4905-a8e5-08b5021fc4ec" />
+
 ```
 
 ### 3.2. Weryfikacja nasłuchiwania wyłącznie na adresie Host-Only (`ss -tlnp`)
@@ -76,7 +77,8 @@ sudo ss -tlnp
 ```
 Wynik potwierdzający nasłuchiwanie wyłącznie na `192.168.56.102:8080`:
 ```text
-[WKLEJ TUTAJ WYNIK Z SS -TLNP]
+<img width="610" height="151" alt="image" src="https://github.com/user-attachments/assets/cb4e1348-97e7-4405-bb95-12f0b973578a" />
+
 ```
 
 ### 3.3. Test automatycznego restartu po zabiciu procesu (`kill`)
@@ -102,6 +104,8 @@ curl [http://192.168.56.102:8080/v1/chat/completions](http://192.168.56.102:8080
 ```
 
 Odpowiedź modelu:
+<img width="914" height="238" alt="image" src="https://github.com/user-attachments/assets/4635f177-fd62-443b-957e-aa5d454c8015" />
+
 ```json
 {"choices":[{"finish_reason":"stop","index":0,"message":{"content":"System Linux jest systemem operacyjnym, który jest używany w wielu urządzeniach komputerowych, takich jak notebooky, serwery, rakiety, a także na komputerach domowych. Jest to system operacyjny, który jest zbudowany z wielu programów, które są używane do zarządzania systemem i zarządzania plikami. System Linux jest używany w wielu środowiskach, takich jak oprogramowanie na rzecz systemu operacyjnego, systemy plików, aplikacje, a także systemy zarządzania plikami.</s>","role":"assistant"}}],"created":1793031756,"id":"chatcmpl-0QikmEudfEn1jOkNUmg96TKF83r7yUKk","model":"LLaMA_CPP","object":"chat.completion","usage":{"completion_tokens":148,"prompt_tokens":37,"total_tokens":185}}
 ```
